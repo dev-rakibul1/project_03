@@ -1,0 +1,247 @@
+/* -------------------------------------------------------------------------- */
+/*                          Reset css
+/* -------------------------------------------------------------------------- */
+/* google fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --body__font: "Poppins", sans-serif;
+  --main__color: #3e3e3e;
+  --body__color: #e5e5e5;
+  --all__btn_color: #3f87f5;
+  --package__color: #848199;
+}
+
+body {
+  font-family: var(--body__font);
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: var(--body__color);
+}
+
+.ml-auto {
+  margin-left: auto !important;
+}
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none;
+}
+
+.global-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  color: var(--all__btn_color);
+  padding: 10px 25px;
+}
+
+.section-gap {
+  margin-top: 100px;
+}
+
+/* section header  */
+.section-title {
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 57px;
+  color: var(--main__color);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                          Header section css
+/* -------------------------------------------------------------------------- */
+
+/* nav */
+.navbar .navbar-brand {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  color: var(--main__color);
+}
+
+/* navbar */
+.nav-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--main__color);
+}
+
+/* hero slider area styleing */
+.hero-article {
+  flex-direction: column;
+  max-width: 639px;
+  margin: 0 auto;
+}
+
+.hero-article h1 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 57.84px;
+  text-align: center;
+}
+
+.hero-article p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  max-width: 456px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                          Welcome section css
+/* -------------------------------------------------------------------------- */
+
+article.welcome-article {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start; */
+  /* max-width: 100%;
+  width: 100%;
+  height: 100%; */
+}
+
+/* 015 21-73 07 03 */
+
+.welcome-article h2 {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 60px;
+  color: var(--main__color);
+}
+
+.welcome-article p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.welcome-article .welcome-btn {
+  background-color: var(--all__btn_color);
+  color: var(--body__color);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.welcome-article .welcome-btn i {
+  margin-left: 8px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                          package section css
+/* -------------------------------------------------------------------------- */
+
+.package-info h3 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 46px;
+  color: var(--main__color);
+}
+
+.package-info h4 {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 32.81px;
+  color: var(--main__color);
+  margin-top: 30px;
+}
+.list li,
+.package-info p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22.5px;
+  margin-top: 15px;
+  color: var(--package__color);
+}
+.list li {
+  list-style: none;
+  margin-top: 19px;
+}
+
+.package-btn {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px;
+}
+
+.package-single-box:hover .package-info h3,
+.package-single-box:hover .package-info h4,
+.package-single-box:hover .package-info p,
+.package-single-box:hover .package-info .list li {
+  color: #e5e5e5;
+}
+
+.package-single-box:hover {
+  background-color: var(--all__btn_color);
+  color: var(--body__color) !important;
+  border-radius: 20px;
+}
+/* -------------------------------------------------------------------------- */
+/*                          Client section css
+/* -------------------------------------------------------------------------- */
+
+.client-box {
+  padding: 0 54px;
+  box-shadow: 1px 1px 9px 1px #0000002e;
+}
+
+.client-info p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: var(--package__color);
+}
+
+.client-box .client-thumbnil {
+  margin-top: 15px;
+}
+
+.client-box h6,
+.client-box h5 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  margin-top: 15px;
+}
+
+.client-box h6 {
+  color: var(--package__color);
+  margin-top: -10px !important;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                          Question section css
+/* -------------------------------------------------------------------------- */
+
+.accordion-button {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 28px;
+  color: var(--main__color);
+}
+
+.accordion-body p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--package__color);
+  letter-spacing: 0.2px;
+}
